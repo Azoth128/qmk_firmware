@@ -24,12 +24,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       *                                SYM
       */
     [_BASE] = LAYOUT_split_3x6_3(
-        KC_KP_PLUS,  KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,       KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   DE_UDIA,
+        DE_PLUS,  KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,       KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   DE_UDIA,
 
         KC_KP_EQUAL, MT(MOD_LGUI,KC_A),  MT(MOD_LCTL,KC_S),   MT(MOD_LALT,KC_D),   MT(MOD_LSFT,KC_F),    KC_G,
         KC_H,       MT(MOD_RSFT,KC_J),  MT(MOD_RALT,KC_K),   MT(MOD_RCTL,KC_L),   MT(MOD_RGUI,DE_ODIA), DE_ADIA,
 
-        KC_KP_MINUS,  KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,       KC_N,   KC_M,   DE_COMM,DE_DOT, DE_SLSH,    DE_SS,
+        DE_MINS,  KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,       KC_N,   KC_M,   DE_COMM,DE_DOT, DE_SLSH,    DE_SS,
 
         KC_ESC,                 LT(_NAVIGATION,KC_SPC), KC_TAB,
         LT(_SYMBOLS,KC_ENT),    LT(_NUMBERS,KC_BSPC),   LT(_FUNCTIONS,KC_DELETE)
@@ -50,9 +50,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       *                       └───┘   └───┘
       */
     [_NUMBERS] = LAYOUT_split_3x6_3(
-        KC_KP_PLUS, KC_NO,KC_7,    KC_8,    KC_9,    KC_KP_ASTERISK,    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,
+        DE_PLUS, KC_NO,KC_7,    KC_8,    KC_9,    KC_KP_ASTERISK,    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,
         KC_KP_EQUAL,KC_NO,KC_4,    KC_5,    KC_6,    KC_NO,             KC_NO,  KC_RSFT, KC_RALT, KC_RCTL, KC_RGUI, KC_NO,
-        KC_KP_MINUS,KC_NO,KC_1,    KC_2,    KC_3,    KC_NO,             KC_NO,  DE_COLN,  DE_COMM,DE_DOT, DE_SLSH,    KC_NO,
+        DE_MINS,KC_NO,KC_1,    KC_2,    KC_3,    KC_NO,             KC_NO,  DE_COLN,  DE_COMM,DE_DOT, DE_SLSH,    KC_NO,
         KC_ESC,     KC_0,    KC_TAB,             KC_ENT, KC_NO,  KC_DELETE
     ),
 
@@ -71,9 +71,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       *                       └───┘   └───┘
       */
     [_SYMBOLS] = LAYOUT_split_3x6_3(
-        KC_KP_PLUS,  DE_EXLM,DE_SECT,DE_LCBR,DE_RCBR,DE_PERC,        DE_GRV, DE_AMPR,DE_QUES,DE_BSLS,DE_DEG, KC_NO,
+        DE_PLUS,  DE_EXLM,DE_SECT,DE_LCBR,DE_RCBR,DE_PERC,        DE_GRV, DE_AMPR,DE_QUES,DE_BSLS,DE_DEG, KC_NO,
         KC_KP_EQUAL, DE_HASH,DE_DLR, DE_LPRN,DE_RPRN,DE_TILD,        DE_QUOT,DE_DQUO,DE_SCLN,DE_PIPE,DE_UNDS,KC_NO,
-        KC_KP_MINUS, DE_LABK,DE_RABK,DE_LBRC,DE_RBRC,DE_EURO,        DE_CIRC,DE_AT,  DE_COLN,DE_SLSH,KC_NO,  KC_NO,
+        DE_MINS, DE_LABK,DE_RABK,DE_LBRC,DE_RBRC,DE_EURO,        DE_CIRC,DE_AT,  DE_COLN,DE_SLSH,KC_NO,  KC_NO,
                                 KC_ESC, KC_BSPC,KC_TAB,         KC_NO,  KC_BSPC,KC_DELETE
     ),
 
